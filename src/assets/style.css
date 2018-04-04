@@ -5,8 +5,12 @@
     src: url('./armalite_rifle.ttf');
 }
 
-.app {
+#app {
     text-align: center;
+}
+
+body {
+    font-family: sans-serif;    
 }
 
 .App-header {
