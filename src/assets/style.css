@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'ArmaliteRifle';
+    font-style: normal;
+    font-weight: 100;
+    src: url('./armalite_rifle.ttf');
+}
+
+.app {
+    text-align: center;
+}
+
+.App-header {
+    padding-bottom: 20px;
+}
+
+.App-title {
+    padding: 10px;
+    color: #829074;
+    font-size: 40px;
+    font-family: ArmaliteRifle;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+#logo {
+    width: 250px;
+}
+
+#footer {
+    height: 80px;
+    width: 100%;
+    background-color: lightblue;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li.selected-keyword {
+    background-color: lightblue;
+}
