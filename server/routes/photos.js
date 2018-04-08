@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 			console.log(err);
 	    res.json(items.map(function (item) {
 			return {
-				src: config.apiHost + '/images/' +  item, width: 9, height: 6, name: item
+				src: config.apiHost + '/images/' +  item, caption: item
 			}
         }));
 	});
