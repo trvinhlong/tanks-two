@@ -5,6 +5,9 @@
     <lightbox
       :images="displayedImages" :caption="true"
     ></lightbox>
+    <div style="width: 100%;text-align: center;">
+      <div class="fb-page" data-href="https://www.facebook.com/tanksvn/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/tanksvn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tanksvn/">Tanks.vn</a></blockquote></div>
+    </div>
   </div>
 </template>
 
