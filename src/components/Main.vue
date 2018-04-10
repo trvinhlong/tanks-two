@@ -30,10 +30,11 @@ export default {
       {label: 'Zvezda', key: 'zvezda'}
     ],
     categories: [
-      {label: 'Mô hình xe tăng, pháo binh', key: 'tank'},
-      {label: 'Mô hình tàu chiến', key: 'ship'},
-      {label: 'Mô hình lính', key: 'soilder'},
-      {label: 'Mô hình giả tưởng', key: 'robot'}
+      {label: 'Xe tăng, pháo binh', key: 'tank'},
+      {label: 'Tàu chiến', key: 'ship'},
+      {label: 'Máy bay', key: 'airplane'},
+      {label: 'Lính', key: 'soldier'},
+      {label: 'Robot', key: 'robot'}
     ],
   }},
   components: {
