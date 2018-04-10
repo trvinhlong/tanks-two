@@ -13,6 +13,7 @@
 
 <script>
 import KeywordList from './KeywordList.vue'
+import Config from '../Config'
 import axios from 'axios'
 export default {
   name: 'Main',
@@ -45,7 +46,7 @@ export default {
   },
   methods: {
     getAllPhotos: function () {
-      axios.get('http://localhost:3000/photos')
+      axios.get(Config.apiHost + '/photos')
       .then(response => {
         // JSON responses are automatically parsed.
         this.images = response.data
