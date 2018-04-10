@@ -39,12 +39,12 @@ app.use('/images', express.static(path.join(__dirname, 'public/images')));
 app.use(logger(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
 
 // Serve static assets
-app.use(express.static(path.resolve(__dirname, '..', 'build')));
+app.use(express.static(path.resolve(__dirname, '..', 'dist')));
 
 
 // Always return the main index.html, so react-router render the route in the client
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '..', 'dist', 'index.html'));
 });
 
 // error handler
