@@ -42,6 +42,11 @@ export default {
   },
   created: function () {
     this.getAllPhotos()
+      this.$ga.page({
+          page: '/',
+          title: 'Home page',
+          location: window.location.href
+      })
   },
   props: {
   },
@@ -60,10 +65,7 @@ export default {
     filterByKeyword: function (keyword) {
       this.displayedImages = [...this.images].filter(image => image.caption.includes(keyword))
       this.selectedKeyword = keyword
-    },
-      track () {
-          this.$ga.screenview('home')
-      }
+    }
   }
 }
 </script>
