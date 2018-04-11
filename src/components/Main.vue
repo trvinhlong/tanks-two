@@ -60,7 +60,10 @@ export default {
     filterByKeyword: function (keyword) {
       this.displayedImages = [...this.images].filter(image => image.caption.includes(keyword))
       this.selectedKeyword = keyword
-    }
+    },
+      track () {
+          this.$ga.screenview('home')
+      }
   }
 }
 </script>

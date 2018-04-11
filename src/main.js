@@ -5,7 +5,10 @@ import VueAnalytics from 'vue-analytics'
 import Config from './Config'
 
 Vue.use(VueAnalytics, {
-    id: Config.gaTrackingId
+    id: Config.gaTrackingId,
+    autoTracking: {
+        screenview: true
+    }
 })
 Vue.use(lightbox)
 
